@@ -1,5 +1,5 @@
-[![](https://images.microbadger.com/badges/image/jgeusebroek/spotweb.svg)](https://microbadger.com/images/jgeusebroek/spotweb "Get your own image badge on microbadger.com")
-[![](https://img.shields.io/docker/pulls/jgeusebroek/spotweb.svg)](https://hub.docker.com/r/jgeusebroek/spotweb/)
+[![](https://images.microbadger.com/badges/image/vincentbitter/spotweb.svg)](https://microbadger.com/images/vincentbitter/spotweb "Get your own image badge on microbadger.com")
+[![](https://img.shields.io/docker/pulls/vincentbitter/spotweb.svg)](https://hub.docker.com/r/vincentbitter/spotweb/)
 
 # Docker Spotweb image
 
@@ -18,7 +18,7 @@ First create a database on your database server, and make sure the container has
 
 	docker run -it --rm -p 80:80 \
 		-e TZ='Europe/Amsterdam' \
-		jgeusebroek/spotweb
+		vincentbitter/spotweb
 
 Please NOTE that there is no database configuration here, this will enable the install process.
 
@@ -39,7 +39,7 @@ When you are done, exit the container (CTRL/CMD-c) and configure the permanent r
 		-e 'SPOTWEB_DB_NAME=spotweb' \
 		-e 'SPOTWEB_DB_USER=spotweb' \
 		-e 'SPOTWEB_DB_PASS=spotweb' \
-		jgeusebroek/spotweb
+		vincentbitter/spotweb:hotfix-403
 
 Please NOTE that the volume is optional. Only necessary when you have special configuration settings.
 
