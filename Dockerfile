@@ -1,5 +1,4 @@
 FROM ubuntu:18.04
-MAINTAINER Jeroen Geusebroek <me@jeroengeusebroek.nl>
 
 ENV DEBIAN_FRONTEND="noninteractive" \
     TERM="xterm" \
